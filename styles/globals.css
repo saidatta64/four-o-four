@@ -1,0 +1,10 @@
+@keyframes loadingBar {
+  from { width: 0%; }   /* start collapsed */
+  to   { width: 100%; } /* grow to full */
+}
+
+/* utility class that the toast uses */
+.animate-loadingBar {
+  animation: loadingBar 5s linear forwards; /* 5 000 ms = toast.duration */
+  transform-origin: left;
+}
