@@ -6,7 +6,7 @@ const faqs: FAQs[] = [
   {
     question: "Who are you, exactly?",
     answer:
-      "We’re third‑year students from the Artificial Intelligence & Data Science department at AISSMS IOIT, Pune, working as a volunteer studio called 4O4DEvs.",
+      "We’re third‑year students from the Artificial Intelligence & Data Science department, working as a volunteer studio called 4O4DEvs.",
   },
   {
     question: "What kinds of projects do you take on?",
@@ -47,11 +47,6 @@ const faqs: FAQs[] = [
     question: "Is my project idea kept confidential?",
     answer:
       "Yes. We’re happy to sign a simple NDA. All private repos stay private and any public demos use scrubbed data unless you approve otherwise.",
-  },
-  {
-    question: "I’m not from AISSMS—can I still collaborate?",
-    answer:
-      "Definitely. Most of our external partners are startups or fellow students from other colleges. Geography isn’t a blocker as long as we can align time zones.",
   },
 ];
 
