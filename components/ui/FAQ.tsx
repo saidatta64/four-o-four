@@ -2,6 +2,7 @@ import { MoveLeft, FileQuestionMark } from "lucide-react";
 import Link from "next/link";
 import { faqs } from "@/lib/faqs";
 import FaqList from "./Faqlist";
+
 export default function FAQ() {
   return (
     <div>
@@ -14,7 +15,7 @@ export default function FAQ() {
               aria-label="Go back"
               className="absolute left-0 top-1/2 -translate-y-1/2"
             >
-              <MoveLeft className="h-10 w-10 rounded-md border bg-white p-2 shadow hover:shadow-gray-400 dark:bg-neutral-800" />
+              <MoveLeft className="h-10 w-10 rounded-md border bg-white dark:bg-neutral-800 p-2 shadow hover:shadow-gray-400 dark:hover:shadow-sky-900" />
             </Link>
 
             {/* Centered title */}
@@ -27,8 +28,9 @@ export default function FAQ() {
               </div>
             </div>
           </div>
+
           <div>
-            <section className=" bg-gray-50">
+            <section className="bg-gray-50 dark:bg-neutral-900">
               <FaqList items={faqs} />
             </section>
           </div>

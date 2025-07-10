@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { FAQs , } from "@/lib/faqs";
+import { FAQs } from "@/lib/faqs";
 
 export default function FaqList({
   items,
@@ -16,22 +16,25 @@ export default function FaqList({
       {items.map((faq, i) => {
         const isOpen = i === openIndex;
         return (
-          <div key={i} className="rounded-lg border p-4  dark:border-neutral-700">
+          <div
+            key={i}
+            className="rounded-lg border border-gray-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 p-4"
+          >
             <button
               className="flex w-full items-center justify-between text-left"
               onClick={() => setOpenIndex(isOpen ? null : i)}
             >
-              <span className="font-semibold  text-gray-900 dark:text-white cursor-pointer">
+              <span className="font-semibold text-gray-900 dark:text-white cursor-pointer">
                 {faq.question}
               </span>
               {isOpen ? (
-                <ChevronUp className="h-5 w-5 cursor-pointer" />
+                <ChevronUp className="h-5 w-5 text-gray-900 dark:text-white" />
               ) : (
-                <ChevronDown className="h-5 w-5 cursor-pointer" />
+                <ChevronDown className="h-5 w-5 text-gray-900 dark:text-white" />
               )}
             </button>
             {isOpen && (
-              <p className="mt-2 text-gray-800 dark:text-gray-300">
+              <p className="mt-2 text-gray-700 dark:text-gray-300">
                 {faq.answer}
               </p>
             )}
