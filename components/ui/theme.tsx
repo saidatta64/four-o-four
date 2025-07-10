@@ -40,9 +40,9 @@ export default function ThemeToggle() {
           {theme === 'dark' ? (
             <Moon className="size-4 text-black dark:text-white" />
           ) : theme === 'light' ? (
-            <Sun className="size-4 text-black" />
+            <Sun className="size-4 text-black dark:text-white" />
           ) : (
-            <Laptop className="size-4 text-black" />
+            <Laptop className="size-4 text-black dark:text-white" />
           )}
         </Button>
       </DropdownMenuTrigger>

@@ -1,11 +1,7 @@
-
 import { UniversityIcon, MoveLeft, Rocket } from "lucide-react";
 import Link from "next/link";
-import OurTeamSection from "./Ourteam"; // (optional) add below if you want
-
 
 export default function About() {
-  
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-900 py-16">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -75,13 +71,6 @@ export default function About() {
             This is what drives us:&nbsp;
             <em className="font-bold">Building forward, together.</em>
           </p>
-        </div>
-      </div>
-
-      {/* Uncomment if you want to show the team section below */}
-      <div className="mx-auto w-full max-w-2xl md:max-w-3xl mt-10 bg-white dark:bg-neutral-800 rounded-2xl shadow-lg border border-gray-200 dark:border-neutral-700 overflow-hidden">
-        <div className="p-4 sm:p-6 md:p-8 lg:p-12 space-y-8">
-          <OurTeamSection/>
         </div>
       </div>
     </div>
