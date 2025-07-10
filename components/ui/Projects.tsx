@@ -62,7 +62,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section className="bg-gray-50 py-16 dark:bg-neutral-900">
+    <section className="bg-gray-50 py-16 dark:bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <header className="mb-16 text-center">

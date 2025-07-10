@@ -18,13 +18,13 @@ export default function FaqList({
         return (
           <div
             key={i}
-            className="rounded-lg border border-gray-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 p-4"
+            className="rounded-lg border border-gray-300 dark:border-neutral-600 bg-gray-100 dark:bg-neutral-800 p-6 shadow-sm transition-shadow hover:shadow-md"
           >
             <button
-              className="flex w-full items-center justify-between text-left"
+              className="flex w-full items-center justify-between text-left font-bold text-gray-900 dark:text-white transition-colors duration-200 rounded-md px-2 py-2 "
               onClick={() => setOpenIndex(isOpen ? null : i)}
             >
-              <span className="font-semibold text-gray-900 dark:text-white cursor-pointer">
+              <span className="font-bold text-gray-900 dark:text-white cursor-pointer">
                 {faq.question}
               </span>
               {isOpen ? (
@@ -34,7 +34,7 @@ export default function FaqList({
               )}
             </button>
             {isOpen && (
-              <p className="mt-2 text-gray-700 dark:text-gray-300">
+              <p className="mt-3 text-gray-800 dark:text-gray-200 text-base leading-relaxed">
                 {faq.answer}
               </p>
             )}

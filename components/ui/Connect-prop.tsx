@@ -39,7 +39,7 @@ export default function ConnectForm() {
   }
 
   return (
-    <div className="py-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-neutral-900 dark:to-neutral-950">
+    <div className="py-16 bg-gray-50 dark:bg-black">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
     {/* Header Title */}

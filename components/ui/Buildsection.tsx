@@ -24,7 +24,7 @@ const projects = [
 ];
 export default function BiggerCardPreview() {
   return (
-    <section className="flex justify-center py-16 px-4">
+    <section className="flex justify-center py-16 px-4 dark:bg-black bg-gray-50">
       {/* ── OUTER CARD ───────────────────────────────────────────── */}
       <div
         className="
