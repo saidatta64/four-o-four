@@ -63,7 +63,7 @@ export default function Header({
               <div
                 key={item.name}
                 onClick={()=> router.push('/about')}
-                className=" cursor-pointer text-lg font-semibold text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors px-2 py-1 rounded font-sans"
+                className="text-lg font-semibold text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors px-2 py-1 rounded font-sans bg-transparent border-none cursor-pointer hidden lg:block"
               >
                 {item.name}
               </div>
