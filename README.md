@@ -26,7 +26,7 @@ A modern, production-ready platform for connecting clients and contributors, bui
 
 ### 1. **Clone the Repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/saidatta64/four-o-four.git
 cd project
 ```
 
