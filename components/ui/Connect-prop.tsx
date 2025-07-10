@@ -21,7 +21,7 @@ export default function ConnectForm() {
       });
       const data = await res.json();
       if (data.success) {
-        toast.success('Thank you! We have sent you an email with a form to connect with us 📧');
+        toast.success('Thank you! We have sent you an email with a form to connect with us 📧\nIf you do not see the email in your inbox, please check your spam folder.');
         setEmail(''); // Clear the form
       } else {
         toast.error('Failed to send email', {

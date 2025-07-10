@@ -27,7 +27,7 @@ export default function Join404Email({
 }: Join404EmailProps) {
   const brand = {
     primary: "#FAFAD2", // Light yellow/cream
-    secondary: "#98FB98", // Vibrant light green (Discord-like, still fresh)
+    secondary: "#2563eb", // Strong blue for button
     bg: "#F8F9FA", // Slightly brighter background for more contrast
     text: "#212529", // Darker text for better readability
     gray: "#6C757D", // Slightly darker gray for subtle text
@@ -113,15 +113,15 @@ export default function Join404Email({
 
             <Text
               style={{
-                color: brand.gray,
+                color: brand.text,
                 fontSize: "16px",
                 lineHeight: "1.7", // Improved line height for readability
                 marginBottom: "24px",
               }}
             >
-              Thank you for choosing **404Devs**! We’re excited to embark on this
+              Thank you for choosing <strong>404Devs</strong>! We’re excited to embark on this
               journey with you, whether you're bringing innovative ideas to life
-              as a **Client** or contributing your expertise as a **Contributor**.
+              as a <strong>Client</strong> or contributing your expertise as a <strong>Contributor</strong>.
             </Text>
 
             {/* Call to Action */}
@@ -138,7 +138,7 @@ export default function Join404Email({
                     fontSize: "17px", // Slightly larger text
                     textDecoration: "none",
                     display: "inline-block",
-                    boxShadow: "0 4px 15px rgba(152, 251, 152, 0.4)", // Subtle shadow for the button
+                    boxShadow: "0 4px 15px rgba(37, 99, 235, 0.2)", // Subtle shadow for the button
                   }}
                 >
                   {role === "Contributor"
@@ -150,7 +150,7 @@ export default function Join404Email({
 
             <Text
               style={{
-                color: brand.gray,
+                color: brand.text,
                 fontSize: "15px",
                 lineHeight: "1.7",
                 marginTop: "24px",
@@ -175,7 +175,7 @@ export default function Join404Email({
               Here's What Happens Next:
             </Heading>
 
-            <Text style={{ color: brand.gray, fontSize: "16px", lineHeight: "1.8" }}>
+            <Text style={{ color: brand.text, fontSize: "16px", lineHeight: "1.8" }}>
               <strong style={{ color: brand.text }}>1. Submit your form:</strong> Share the details of your idea, problem, or your valuable skills with us.
               <br />
               <strong style={{ color: brand.text }}>2. Review in 48 hours:</strong> Our lead engineers will carefully review your submission and scope out the work involved or the perfect opportunities.
@@ -194,7 +194,7 @@ export default function Join404Email({
                 lineHeight: "1.6",
               }}
             >
-              We're genuinely excited to collaborate and **build something impactful**
+              We're genuinely excited to collaborate and <strong>build something impactful</strong>
               together. Your journey with 404Devs starts now!
               <br />
               <br />
